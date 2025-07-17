@@ -21,8 +21,8 @@ jobs:
           username: ${{Secret.DOCKER_USERNAME}}
           password: ${{Secret.DOCKER_PASSWORD}}
           
-        -name: Build push container
-          run: |
+      - name: Build push container
+          run:|
           
           
           docker build -t mycontainer:v1 .
